@@ -1,0 +1,95 @@
+/***************** Common Classes ****************/
+.text-align-center {
+	text-align: center;
+}
+
+.background-color{
+	background-color: lightgrey;
+    color: white;
+}
+
+.no-padding{
+	padding: 0px;
+}
+
+.set-scroll{
+	overflow-y: scroll;
+    height: 460px;
+}
+
+.bg-color-dark{
+	background-color: black;
+}
+
+
+
+
+/************ Body CSS ***********/
+body {
+	overflow: hidden;
+}
+
+/************ Header Container Classes ***********/
+#header-container {
+	height: 180px;
+}
+
+#header-container .heading{
+	margin-bottom: 0px;
+    padding: 70px 20px;
+}
+
+/************ Main Container Classes ***********/
+#main-container {
+	height: 500px;
+}
+
+#main-container .left-pane-list{
+	list-style-type:none;
+	padding: 20px 0px; 	
+}
+
+#main-container .city-description-section{
+	height: 460px;
+}
+
+#main-container .city-description-section .description > img{
+	float: left;
+    margin-right: 5px;
+}
+
+#main-container .right-pane-top{
+	padding: 25px 50px 20px 21px;
+}
+
+#main-container .right-pane-top .btn-group a{
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+
+#main-container .vl {
+  border-left: 1.5px solid black;
+  height: 500px;
+  position: absolute;
+  left: 25%;
+  margin-left: -3px;
+  top: 20;
+}
+#main-container .right-pane-top .btn-group > button{
+	background-color: black;
+        padding: 6px 8px;
+	width: 100px;	
+}
+
+/************ Footer Container Classes ***********/
+#footer-container {
+	height: 60px;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
+
+#footer-container .footer{
+	padding: 10px 20px;
+}

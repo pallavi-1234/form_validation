@@ -1,0 +1,145 @@
+<html lang="en">
+	<head>
+		<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+	
+	<!-- Styles -->
+	<style>
+		#user_info label{
+			display: inline-block;
+			width: 100px;
+			text-align: right;
+		}
+		#user_submit{
+			padding-left: 100px;
+		}
+		#user_info div{
+			margin-top: 1em;
+		}
+		
+		.error{
+			display: none;
+			margin-left: 10px;
+		}		
+		
+		.error_show{
+			color: red;
+			margin-left: 10px;
+		}
+.success_show{
+			color: green;
+			margin-left: 10px;
+		}
+		
+		input.invalid{
+			border: 2px solid red;
+		}
+		
+		input.valid{
+            display:none;
+			border: 2px solid green;
+		}
+        .message{
+            display: inline-block;
+            margin-left: 100px; 
+            width: 100px;
+        }
+	</style>
+	
+	<script>
+		$(document).ready(function() {
+		
+		
+		
+                    $('#user_submit').click(function(e) {
+		$(".error_show,.success_show").remove();			
+	
+		var allValid = true;
+	var usernameValue = $("#user_name").val();
+				
+var passwordValue = $("#user_password").val();
+			
+var phoneValue = $("#user_phone").val();
+				
+var username_length = $("#user_name").val().length;
+				
+var password_length = $("#user_password").val().length;
+				
+var phone_length = $("#user_phone").val().length;
+
+	
+if(username_length<1)
+{
+allValid = false;
+$("#p1").append('<span class="error_show">UserName is required</span>');
+}	
+else{
+if(username_length<6){
+allValid = false;
+$("#p1").append('<span class="error_show">UserName should be atleast 6 characters long</span>');
+}
+}		
+				
+if(password_length<1){
+allValid = false;
+$("#p2").append('<span class="error_show">Password is required</span>');
+}
+else{
+if(password_length<6){
+allValid = false;
+$("#p2").append('<span class="error_show">Password should be atleast 6 characters long</span>');
+}
+}
+if(phone_length<1){
+allValid = false;
+$("#p3").append('<span class="error_show">Phone no is required</span>');
+}
+else{
+var digits = /^[0-9]+$/;
+var is_phone = digits.test(phoneValue);
+if(!is_phone){
+allValid = false;
+$("#p3").append('<span class="error_show">Enter valid phone no</span>');
+}
+}
+
+if(allValid){
+$("#p4").append('<span class="success_show">Form is Valid</span>');
+}
+});
+
+});	
+		
+	
+
+		
+		
+	</script>
+	</head>
+    <body>
+		<form id="user_info" method="post" action="">
+			<div>
+				<label for="user_name">Username:</label>
+				<input type="text" id="user_name" name="user_name">
+			</div>
+			<div>
+				<label for="user_password">Password:</label>
+				<input type="Password" id="user_password" name="user_password">
+				
+			</div>
+			<div>
+				<label for="user_phone">Phone:</label>
+				<input type="text" id="user_phone" name="user_phone">
+                        </div>						
+			<div id="user_submit">				
+				<button type="button" >Validate</button>
+			</div>
+			<div id="Message">
+				<p id="p1"></p>
+
+                                <p id="p2"></p><p id="p3"></p>
+<p id = "p4"></p>
+			</div>
+		</form>
+	</body>
+</html>

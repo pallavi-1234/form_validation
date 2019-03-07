@@ -1,0 +1,137 @@
+ /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+	  height:100%;
+	  width:100%;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {
+		
+	 height: 400px	
+	 
+	 
+	
+	}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #8FBC8F;
+      height: 250%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+   
+img{
+padding-top: 20px;
+float:left;
+}
+.first{
+padding-top: 20px;
+}
+.pic{
+padding-top: 20px;
+}
+.about-myself{
+padding-top: 10px;
+float:right;
+ }
+ 
+
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+    .center-name{
+        position:relative;
+        left:50px;
+        padding:70px;
+        
+    }
+    .format{
+        padding:2px;
+        background-color: #e6f2b2;
+    }
+    .images{
+       float:left;
+       padding-bottom:5px;
+       
+    }
+    
+    
+    .center-name{
+        
+        
+    }
+    .put-border{
+       border-top: 1px solid green; 
+       
+    }
+    .aboutme{
+        font-family: Arial Verdana;
+        color: #008080;
+		width : 100%;
+    }
+    .first{
+        float:left;
+        padding:5px;
+		width : 100%;
+    }
+    .about-myself{
+        
+        float:left;
+  width:100%;
+       
+    }
+    .edu{
+        font-family: Arial Verdana;
+        color: #008080;
+        
+        
+    }
+    
+    .second{
+        float:left;
+        padding:1px;
+        
+    }
+    
+    .skills{
+      float:left;  
+      width:100%;
+    }
+    
+    .ski{
+     font-family: Arial Verdana;
+     color: #008080;   
+    }
+    
+    .third{
+        float:left;
+        padding:1px;
+    }
+    .projects{
+        float:left;
+		height : 100px;
+    }
+    .proj{
+     font-family: Arial Verdana;
+        color: #008080;   
+    }
+    .fourth{
+      float:left;
+      padding:1px;
+    }
+    
